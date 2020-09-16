@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>High-Wave</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="shortcut icon" href="img/favicon/favicon.png" />
+	<link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon/favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css" />
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="libs/linea/styles.css" />
+	<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
+	<link rel="stylesheet" href="libs/animate/animate.css" />
+	<link rel="stylesheet" href="css/fonts.min.css" />
+	<link rel="stylesheet" href="css/main.min.css" />
+	<link rel="stylesheet" href="css/skins/blue.css" />
+	<link rel="stylesheet" href="css/media.min.css" />
+</head>
+<body>
+
+	<!-- Londing Icons -->
+
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
+
+	<!-- Header + Effect Parallax -->
+
+	<header class="main_head main_color_bg" data-parallax="scroll" data-image-src="img/header/header_17_END.jpg" data-z-index="1">
+
+		<!-- Logo Inkscape -->
+
+		<div class="logo_container">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 338.02817 338.02817" id="svg3680" version="1.1">
+				<path
+					id="path3820"
+					d="M 125.96468,329.43687 C 97.37806,321.73815 74.271435,308.13685 52.081376,285.94679 19.665837,253.53125 3.3802817,214.42917 3.3802817,169.01408 3.3802817,123.50566 19.420704,85.306439 52.363572,52.363572 85.306439,19.420704 123.50566,3.3802817 169.01408,3.3802817 c 45.4434,0 83.41545,15.9244793 117.02781,49.0783873 51.78647,51.080141 63.49371,128.233771 29.60563,195.108661 -11.44181,22.57933 -45.50086,56.63838 -68.08019,68.08019 -36.69202,18.59325 -83.89124,23.94548 -121.60265,13.78935 z m 68.40152,-8.26437 c 63.6815,-10.34702 116.63025,-63.9683 127.04898,-128.6627 4.11637,-25.5603 1.00276,-57.29853 -5.62114,-57.29853 -3.54325,0 -4.11561,4.69198 -2.57929,21.14404 8.62843,92.39983 -75.72273,171.11382 -166.67339,155.53463 C 100.27499,303.96485 54.067606,269.744 38.489334,231.8674 c -3.50716,-8.52722 -8.278066,-15.50973 -10.60201,-15.5167 -6.491699,-0.0195 -5.152042,5.75306 6.338174,27.31091 24.189481,45.38412 77.507342,78.01724 131.408302,80.42827 4.64789,0.20792 17.57747,-1.10492 28.7324,-2.91738 z M 24.353688,175.49262 C 20.976995,102.13725 73.116085,38.715445 147.23577,26.01928 204.3399,16.237758 268.2869,47.594427 295.73537,98.836662 307.40735,120.62652 306.41822,119.44271 310.7274,116.77949 316.42216,113.25993 298.83483,82.17069 279.70888,61.947813 258.56798,39.594426 225.47174,22.433117 192.91189,16.941187 129.50778,6.2466991 61.18704,40.652677 32.187051,97.881397 19.953318,122.02351 12.436663,159.2495 15.22554,181.88273 c 3.245693,26.34055 10.404129,21.32933 9.128148,-6.39011 z"
+					style="fill:#c1c1c1;stroke-width:3.38028169" />
+				<path
+					id="path3818"
+					d="M 129.62663,329.84854 C 56.823864,312.18924 3.3802817,244.10355 3.3802817,169.01408 3.3802817,78.903529 78.903529,3.3802817 169.01408,3.3802817 c 76.66185,0 146.31498,56.4253493 161.89831,131.1522983 24.81706,119.00561 -83.31558,223.93122 -201.28576,195.31596 z m 70.48868,-9.10911 c 60.4882,-12.72251 109.3136,-62.66551 121.20232,-123.97661 3.48402,-17.96736 2.62741,-59.86003 -1.30439,-63.79183 -0.60377,-0.60377 -36.72698,17.88745 -80.27381,41.0916 -43.54683,23.20416 -82.59858,42.20874 -86.78168,42.2324 -10.04478,0.0568 -9.91085,-9.04042 0.74417,-50.54815 4.51786,-17.59981 7.85834,-32.35559 7.42329,-32.79064 -0.43505,-0.43505 -31.50683,18.52817 -69.048405,42.14049 -62.745141,39.46446 -68.109561,43.59556 -66.4266,51.1546 5.501306,24.70922 43.899787,66.75011 74.494245,81.56064 32.0942,15.53653 66.44641,19.97871 99.97086,12.9275 z M 104.13545,147.16784 c 56.75317,-35.17044 76.36294,-45.76805 79.28396,-42.84703 2.92101,2.92102 1.53528,13.28259 -5.60263,41.89272 -5.21594,20.90651 -10.29943,40.15853 -11.29665,42.78229 -0.99721,2.62376 16.26865,-4.84622 38.36859,-16.59994 63.60739,-33.82923 100.63234,-52.9328 105.86402,-54.62213 8.48978,-2.74137 -9.08398,-32.872425 -33.35306,-57.185381 C 251.61552,34.757581 227.72614,22.21302 192.96873,16.252784 144.06418,7.8665845 97.823737,23.352998 60.588369,60.588369 23.88428,97.292454 6.7139659,147.65434 15.657768,192.37335 c 1.881213,9.40606 2.790439,10.13563 7.605634,6.10282 3.007946,-2.51922 39.400365,-25.60796 80.872048,-51.30833 z"
+					style="fill:#9eb4cc;stroke-width:3.38028169" />
+			</svg>
+		</div>
+
+		<!-- Bootstrap -->
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<!-- Menu Design -->
+
+					<button class="toggle_mnu">
+						<span class="sandwich">
+							<span class="sw-topper"></span>
+							<span class="sw-bottom"></span>
+							<span class="sw-footer"></span>
+						</span>
+					</button>
+
+					<!-- Nav Menu -->
+
+					<nav class="top_mnu">
+						<ul>
+							<li><a href="#about">Обо мне</a></li>
+							<li><a href="#directions">Инструменты</a></li>
+							<li><a href="#resume">Резюме</a></li>
+							<li><a href="#portfolio">Портофолио</a></li>
+							<li><a href="#contacts">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>	
+			</div>
+		</div>
+
+		<!-- Nickname Center -->
+
+		<div class="top_wrapper">
+			<div class="top_descr">
+				<div class="top_centered">
+					<div class="top_text">
+						<h1>ANDRII DIACHENKO</h1>
+						<p>Web-дизайнер, Frond-End разработчик</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Section About -->
+
+	<section id="about" class="s_about bg_light">
+		<div class="section_header">
+			<h2>Обо мне</h2>
+			<div class="s_descr_wrap">
+				<div class="s_descr">КРАТКОЕ ОПИСАНИЕ</div>
+			</div>
+		</div>
+
+		<!-- Bootstrap -->
+
+		<div class="section_content">
+			<div class="container">
+				<div class="row">
+
+					<!-- Photo About -->
+
+					<div class="col-md-4 col-md-push-4 animation_1">
+						<h3>Фото</h3>
+						<div class="person">
+							<a href="img/myphoto/photo.jpg" class="popup"><img src="img/myphoto/photo.jpg" alt="Alt" /></a>
+						</div>
+					</div>
+
+					<!-- Left About -->
+
+					<div class="col-md-4 col-md-pull-4 animation_2">
+						<h3>Немного о себе</h3>
+						<p>Занимаюсь созданием сайтов около 2-х лет. За это время получил базовый опыт в front-end верстке, также постоянно практикую и развиваю свои навыки в данной области.</p>
+						<p>Отлично справляюсь: CSS3, SASS, HTML5, PhotoShop CS6( уровень: нарезка макетов), Inkscape, Gulp, JavaScript(jQuery);
+						<br>Часто используемые  framewok: Bootstrap 3.0/4.0;
+						<br>Текстовые редакторы: Visual Studio Code, Sublime Text 2/3, PhpStorm;
+						<br>В работе использую систему контроля версий Git;
+						<br>Имею опыт работы с такими CMS: WordPress, OpenCart, DataLifeEngine;
+						<br>Знание Английского языка — Средний.</p>
+					</div>
+
+					<!-- Right About -->
+
+					<div class="col-md-4 animation_3 personal_last_block">
+						<h3>Персональная информация</h3>
+						<h2>ANDRII DIACHENKO</h2>
+						<ul>
+							<li>Быстрое и качественное создание сайтов: разработка web-дизайна, верстка макета, посадка на CMS: WordPress, OpenCart, DLE.</li>
+							<li>День рождения: 3 фервраля 1991 года</li>
+							<div class="personal_info">
+								<li>Номер телефона: <span>+3 8(068) 53 897</span></li>
+								<li>E-mail: <a href="mailto:diachenkoandrii7@gmail.com"></a><span>diachenkoandrii7@gmail.com</span></li>
+								<li>Веб-сайт: <a href="//https://github.com/Trikita73" target="_blank"></a><span>https://github.com/Trikita73</span></li>
+							</div>
+						</ul>
+
+						<!-- Social Club -->
+
+						<div class="social_wrap">
+							<ul>
+								<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#" target="_blank"><i class="fa fa-vk"></i></a></li>
+								<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#" target="_blank"><i class="fa fa-github"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Section Directions -->
+
+	<section id="directions" class="s_directions bg_direction" data-parallax="scroll" data-image-src="img/parallax/bg_parallax2.jpg">
+		<div class="section_header">
+			<h2>ИНСТРУМЕНТЫ</h2>
+			<div class="s_descr_wrap">
+				<div class="s_descr">ИСПОЛЬЗУЕТСЯ В РАБОТЕ</div>
+			</div>
+		</div>
+
+		<!-- Container Section Directions -->
+
+		<div class="section_content">
+			<div class="container">
+				<div class="row">
+					<div id="directions_grid">
+
+						<!-- Section Item Directions -->
+
+						<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item direction_item view view-fifth">
+							<img src="img/direction/d_ps.jpg" alt="Alt">
+							<div class="mask">
+								<h2>Web-Дизайн</h2>
+								<p>Создание качественного шаблона на любой вкус, использование последних технологий web-дизайна.</p>	
+							</div>
+						</div>
+
+						<!-- Section Item Directions -->
+
+						<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item direction_item view view-fifth">
+								<img src="img/direction/d_git.jpg" alt="Alt">
+								<div class="mask">
+									<h2>Github</h2>
+									<p>Создание качественного шаблона на любой вкус, использование последних технологий web-дизайна.</p>	
+								</div>
+						</div>	
+
+						<!-- Section Item Directions -->
+
+						<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item direction_item view view-fifth">
+							<img src="img/direction/d_html.jpg" alt="Alt">
+							<div class="mask">
+								<h2>FROND-END</h2>
+								<p>Верстка макета с нуля, применение инструментов web-разработки: html, css/sass, js, gulp.</p>	
+							</div>
+						</div>
+
+						<!-- Section Item Directions -->
+
+						<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item direction_item view view-fifth">
+							<img src="img/direction/d_media.jpg" alt="Alt">
+							<div class="mask">
+								<h2>MOBILE FIRST</h2>
+								<p>Создание мобильной версии сайта под различные девайсы, а также ускорение загрузки web-сайта.</p>	
+							</div>
+						</div>
+
+						<!-- Section Item Directions -->
+
+						<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item direction_item view view-fifth">
+							<img src="img/direction/d_bots.jpg" alt="Alt">
+							<div class="mask">
+								<h2>BOOTSTRAP</h2>
+								<p>Framework – свободный набор инструментов для удобной разработки сайтов и web-приложений.</p>	
+							</div>
+						</div>
+
+						<!-- Section Item Directions -->
+
+						<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item direction_item view view-fifth">
+							<img src="img/direction/d_cms.jpg" alt="Alt">
+							<div class="mask">
+								<h2>CMS</h2>
+								<p>Посадка макета на выбранную cms, настройка или изменение пользовательской части сайта.</p>	
+							</div>
+						</div>
+
+						<!-- Section Item Directions -->
+
+						<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item direction_item view view-fifth">
+							<img src="img/direction/d_gulp.jpg" alt="Alt">
+							<div class="mask">
+								<h2>Gulp</h2>
+								<p>Таск-менеджер для автоматического выполнения часто используемых задач, ускоряя разработку.</p>	
+							</div>
+						</div>
+
+						<!-- Section Item Directions -->
+
+						<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item direction_item view view-fifth">
+							<img src="img/direction/d_js.jpg" alt="Alt">
+							<div class="mask">
+								<h2>Java Script</h2>
+								<p>Мультипарадигменный язык программирования, хорошый выбор для создания плагинов и анимации.</p>	
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>			
+	</section>
+
+	<!-- Section Resume -->
+
+	<section id="resume" class="s_resume">
+		<div class="section_header">
+			<h2>Резюме</h2>
+			<div class="s_descr_wrap">
+				<div class="s_descr">Мои знания и достижения</div>
+			</div>
+		</div>
+
+		<!-- /// -->
+
+		<div class="section_content">
+			<div class="container">
+				<div class="row">
+
+					<!-- /// -->
+
+					<div class="resume_container">
+						<div class="col-md-6 col-sm-6 left">
+							<h3>Работа</h3>
+							<div class="resume_icon"><i class="icon-basic-display"></i></div>
+
+							<!-- Left Side Resume -->
+
+							<div class="resume_item">
+								<div class="year">2018-2020</div>
+								<div class="resume_description">"Happy People Agency"<strong>TRANSLATOR</strong>
+									<p>Работал переводчиком в брачном агентстве. Повысил свой навык в области Английского языка и улучшил свою сноровку в взаимодействии с коллективом.</p>
+								</div>
+							</div>
+							<div class="resume_item">
+								<div class="year">2016-2018</div>
+								<div class="resume_description">"Free Lance"<strong>FROND-END</strong>
+									<p>Занимаюсь разработкой сайтов на заказ, делаю сайты визитки, промо сайты, интернет магазины.</p>
+								</div>
+							</div>
+							<div class="resume_item">
+								<div class="year">2016-2017</div>
+								<div class="resume_description">"MonsterLids.pro"<strong>SUPPORT</strong>
+									<p>Работал в отделе поддержки веб-мастеров в CPA-сети. Получил хороший опыт работы с партнерской программой и навыки общения с веб-мастерами, а также приобрел навыки взаимодействия работы в коллективе.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6 right">
+							<h3>Учеба</h3>
+							<div class="resume_icon"><i class="icon-basic-spread-text"></i></div>
+
+							<!-- Right Side Resume -->
+
+							<div class="resume_item">
+								<div class="year">2019-2020</div>
+								<div class="resume_description"><strong>ENGLISH</strong>"Duoliongo"
+									<p>Изучал Английский язык на образовательной платформе, Duoliongo. Прошел целый курс и продолжаю совершенствовать свои знания в области изучения Английского языка.</p>
+								</div>
+							</div>
+							<div class="resume_item">
+								<div class="year">2013-2016</div>
+								<div class="resume_description"><strong>ІПСА</strong>НТТУ "КПИ"
+									<p>Получил базовое высшее образование “бакалавр” в области компьютерные науки на заочной форме обучения.</p>
+								</div>
+							</div>
+							<div class="resume_item">
+								<div class="year">2009-2015</div>
+								<div class="resume_description"><strong>ТЕПЛОЭНЕРГЕТИК</strong>НТТУ "КПИ"
+									<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+				
+	<!-- Section Portfolio -->
+
+	<section id="portfolio" class="s_portfolio bg_dark" data-parallax-image="img/parallax/bg_parallax.jpg">
+		<div class="section_header">
+			<h2>Портфолио</h2>
+			<div class="s_descr_wrap">
+				<div class="s_descr">Мои работы</div>
+			</div>
+		</div>
+
+		<!-- Types of Jobs -->
+
+		<div class="section_content">
+			<div class="container">
+				<div class="row">
+					<div class="filter_div controls">
+						<ul>
+							<li class="filter active" data-filter="all">Все работы</li>
+							<li class="filter" data-filter=".category-1">Сайты</li>
+							<li class="filter" data-filter=".category-2">Верстка</li>
+							<li class="filter" data-filter=".category-3">Web-дизайн</li>
+						</ul>
+
+						<!-- Short Job Descriptions -->
+
+						<div id="portfolio_grid">
+							<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category-1">
+								<img src="img/portfolio/smitler.jpg" alt="Alt">
+								<div class="port_item_cont">
+									<h3>SMITLER</h3>
+									<p>Landing page</p>
+									<a href="#" class="popup_content">Посмотреть</a>
+								</div>
+								<!-- Popup Hidden Window -->
+								<div class="hidden">
+									<div class="podrt_descr">
+										<div class="modal-box-content">
+											<button class="mfp-close" type="button" title="Close (Esc)">×</button>
+											<h3>SMITLER</h3>
+											<p>https://trikita73.github.io/S-Mitler/</p>
+											<p>Хороший пример для салона красоты бизнес-класса.</p>
+											<img src="img/portfolio/smitler.jpg" alt="Alt">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Popup Window -->
+
+							<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category-1">
+								<img src="img/portfolio/ss.jpg" alt="Alt">
+								<div class="port_item_cont">
+									<h3>SECRET SHOP</h3>
+									<p>Интернет магазин</p>
+									<a href="#" class="popup_content">Посмотреть</a>
+								</div>
+								<!-- Popup Hidden Window -->
+								<div class="hidden">
+									<div class="podrt_descr">
+										<div class="modal-box-content">
+											<button class="mfp-close" type="button" title="Close (Esc)">×</button>
+											<h3>SECRET SHOP</h3>
+											<p>http://secret-shop.loc/</p>
+											<p>Интернет магазин Secret-Shop создан для продажи коллекционных монет и разной атрибутики к ним. Сайт реализован на cms OpenCart.</p>
+											<img src="img/portfolio/ss.jpg" alt="Alt">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Popup Window -->
+
+							<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category-1">
+								<img src="img/portfolio/empire.jpg" alt="Alt">
+								<div class="port_item_cont">
+									<h3>EMPIRE</h3>
+									<p>Flash сайт</p>
+									<a href="#" class="popup_content">Посмотреть</a>
+								</div>
+								<!-- Popup Hidden Window -->
+								<div class="hidden">
+									<div class="podrt_descr">
+										<div class="modal-box-content">
+											<button class="mfp-close" type="button" title="Close (Esc)">×</button>
+											<h3>EMPIRE</h3>
+											<p>https://trikita73.github.io/Empire/</p>
+											<p>Сайт Empire – подходит для размещения своих дизайнерских работ. Хорошо адаптирован под мобильные устройства и при этом имеет приятный дизайн.</p>
+											<img src="img/portfolio/empire.jpg" alt="Alt">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Popup Window -->
+
+							<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category-2">
+								<img src="img/portfolio/3days.jpg" alt="Alt">
+								<div class="port_item_cont">
+									<h3>3DAYS’</h3>
+									<p>Landing page</p>
+									<a href="#" class="popup_content">Посмотреть</a>
+								</div>
+								<!-- Popup Hidden Window -->
+								<div class="hidden">
+									<div class="podrt_descr">
+										<div class="modal-box-content">
+											<button class="mfp-close" type="button" title="Close (Esc)">×</button>
+											<h3>3DAYS’</h3>
+											<p>https://trikita73.github.io/3Days/</p>
+											<p>3Days’ – landing page имеет краткое описание и портфолио работ, то что нужно для Startup.</p>
+											<img src="img/portfolio/3days.jpg" alt="Alt">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Popup Window -->
+
+							<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category-2">
+								<img src="img/portfolio/AFG.jpg" alt="Alt">
+								<div class="port_item_cont">
+									<h3>A.F.G.</h3>
+									<p>Landing page</p>
+									<a href="#" class="popup_content">Посмотреть</a>
+								</div>
+								<!-- Popup Hidden Window -->
+								<div class="hidden">
+									<div class="podrt_descr">
+										<div class="modal-box-content">
+											<button class="mfp-close" type="button" title="Close (Esc)">×</button>
+											<h3>A.F.G.</h3>
+											<p>https://trikita73.github.io/Afg/</p>
+											<p>AFG –  landing page  сайт наглядно показывает всю важность компании. Также есть анимация и адаптация под мобильные устройства.</p>
+											<img src="img/portfolio/AFG.jpg" alt="Alt">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Popup Window -->
+
+							<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category-2">
+								<img src="img/portfolio/yourdiss.jpg" alt="Alt">
+								<div class="port_item_cont">
+									<h3>YURDISS</h3>
+									<p>Сайт услуг</p>
+									<a href="#" class="popup_content">Посмотреть</a>
+								</div>
+								<!-- Popup Hidden Window -->
+								<div class="hidden">
+									<div class="podrt_descr">
+										<div class="modal-box-content">
+											<button class="mfp-close" type="button" title="Close (Esc)">×</button>
+											<h3>YURDISS</h3>
+											<p>https://trikita73.github.io/Yurdiss</p>
+											<p>Сайт созданный для оценочной компании Юрдис. Предоставляющий услуги оценки недвижимости, земли, бизнеса и переоценке частных и госс. активов.</p>
+											<img src="img/portfolio/yourdiss.jpg" alt="Alt">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Popup Window -->
+
+							<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category-3">
+								<img src="img/portfolio/energo-alyans.jpg" alt="Alt">
+								<div class="port_item_cont">
+									<h3>EEA</h3>
+									<p>Сайт визитка</p>
+									<a href="#" class="popup_content">Посмотреть</a>
+								</div>
+								<!-- Popup Hidden Window -->
+								<div class="hidden">
+									<div class="podrt_descr">
+										<div class="modal-box-content">
+											<button class="mfp-close" type="button" title="Close (Esc)">×</button>
+											<h3>EEA</h3>
+											<p>http://energo-alyans.loc/</p>
+											<p>https://trikita73.github.io/Energo-AlyansEEA/</p>
+											<p>Сайт по реализации тепловых котлов на всей территории Украины, сайт реализован на csm DLE.</p>
+											<img src="img/portfolio/energo-alyans.jpg" alt="Alt">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Popup Window -->
+
+							<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category-3">
+								<img src="img/portfolio/akkaynt-byd.jpg" alt="Alt">
+								<div class="port_item_cont">
+									<h3>АККАУНТ-БУД</h3>
+									<p>Промо сайт</p>
+									<a href="#" class="popup_content">Посмотреть</a>
+								</div>
+								<!-- Popup Hidden Window -->
+								<div class="hidden">
+									<div class="podrt_descr">
+										<div class="modal-box-content">
+											<button class="mfp-close" type="button" title="Close (Esc)">×</button>
+											<h3>АККАУНТ-БУД</h3>
+											<p>https://akkaynt-byd.000webhostapp.com//</p>
+											<p>Строительный сайт на котором выводится вся основная информация о работе компании и виде новостной ленты. Сайт находится на cms: DataLifeEngine.</p>
+											<img src="img/portfolio/akkaynt-byd.jpg" alt="Alt">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Popup Window -->
+
+							<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category-3">
+								<img src="img/portfolio/avto-holl.jpg" alt="Alt">
+								<div class="port_item_cont">
+									<h3>АВТО-ХОЛЛ</h3>
+									<p>Сайт визитка</p>
+									<a href="#" class="popup_content">Посмотреть</a>
+								</div>
+								<!-- Popup Hidden Window -->
+								<div class="hidden">
+									<div class="podrt_descr">
+										<div class="modal-box-content">
+											<button class="mfp-close" type="button" title="Close (Esc)">×</button>
+											<h3>АВТО-ХОЛЛ</h3>
+											<p>https://trikita73.github.io/AvtoHoll/</p>
+											<p>Сайт визитка – созданный для автомастерской занимающейся обслуживанием автомобилей разного класса.</p>
+											<img src="img/portfolio/avto-holl.jpg" alt="Alt">
+										</div>
+									</div>
+								</div>								
+							</div>
+
+							<!-- Popup Window -->
+
+							<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category-3">
+								<img src="img/portfolio/Web-job_2.jpg" alt="Alt">
+								<div class="port_item_cont">
+									<h3>T_PIZZA</h3>
+									<p>Template</p>
+									<a href="#" class="popup_content">Посмотреть</a>
+								</div>
+								<!-- Popup Hidden Window -->
+								<div class="hidden">
+									<div class="podrt_descr">
+										<div class="modal-box-content">
+											<button class="mfp-close" type="button" title="Close (Esc)">×</button>
+											<h3>T_PIZZA</h3>
+											<p>https://github.com/Trikita73/Template_Pizza-at-Home/</p>
+											<p>Дизайн шаблона Pizza-at-Home.</p>
+											<img src="img/portfolio/Web-job_2.jpg" alt="Alt">
+										</div>
+									</div>
+								</div>								
+							</div>
+
+							<!-- Popup Window -->
+
+							<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category-3">
+								<img src="img/portfolio/optima.jpg" alt="Alt">
+								<div class="port_item_cont">
+									<h3>OPTIMA</h3>
+									<p>Landing page</p>
+									<a href="#" class="popup_content">Посмотреть</a>
+								</div>
+								<!-- Popup Hidden Window -->
+								<div class="hidden">
+									<div class="podrt_descr">
+										<div class="modal-box-content">
+											<button class="mfp-close" type="button" title="Close (Esc)">×</button>
+											<h3>OPTIMA</h3>
+											<p>https://trikita73.github.io/Optima/</p>
+											<p>Optima – одностраничный сайт который наглядно показывает всю важную информацию компании.</p>
+											<img src="img/portfolio/optima.jpg" alt="Alt">
+										</div>
+									</div>
+								</div>								
+							</div>
+
+							<!-- Popup Window -->
+
+							<div class="mix col-md-3 col-sm-6 col-xs-6 portfolio_item category-3">
+								<img src="img/portfolio/Web-job_1.jpg" alt="Alt">
+								<div class="port_item_cont">
+									<h3>T_LIGHTNING</h3>
+									<p>Template</p>
+									<a href="#" class="popup_content">Посмотреть</a>
+								</div>
+								<!-- Popup Hidden Window -->
+								<div class="hidden">
+									<div class="podrt_descr">
+										<div class="modal-box-content">
+											<button class="mfp-close" type="button" title="Close (Esc)">×</button>
+											<h3>T_LIGHTNING</h3>
+											<p>https://github.com/Trikita73/Template_Lightning/</p>
+											<p>Дизайн шаблона Lighting.</p>
+											<img src="img/portfolio/Web-job_1.jpg" alt="Alt">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Section Contacts -->
+
+	<section id="contacts" class="s_contacts bg_light">
+		<div class="section_header">
+			<h2>Контакты</h2>
+			<div class="s_descr_wrap">
+				<div class="s_descr">Оставьте ваше сообщение</div>
+			</div>
+		</div>
+
+		<!-- Submission Form -->
+
+		<div class="section_content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+						<div class="contact_box">
+							<i class="contacts_icon icon-basic-geolocalize-05"></i>
+							<h3>Адрес:</h3>
+							<p>г. Киев Анны Ахматовой 37А</p>
+						</div>
+						<div class="contact_box">
+							<i class="contacts_icon icon-basic-smartphone"></i>
+							<h3>Телефон:</h3>
+							<p>+3 8(068) 53 897</p>
+						</div>
+						<div class="contact_box">
+							<i class="contacts_icon icon-basic-webpage-img-txt"></i>
+							<h3>Веб-сайт:</h3>
+							<p><a href="https://github.com/Trikita73" target="_blank">https://github.com/Trikita73</a></p>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<form action="http://formspree.io/dyachenkoandrii@gmail.com" class="main_form" novalidate target="_blank" method="POST">
+							<label class="form-group">
+								<span class="color_element">*</span> Ваше имя:
+								<input type="text" name="name" placeholder="Ваше имя" data-validation-required-message="Вы не ввели имя" required />
+								<span class="help-block"></span>
+							</label>
+							<label class="form-group">
+								<span class="color_element">*</span> Ваш E-mail:
+								<input type="email" name="email" placeholder="Ваш E-mail" data-validation-required-message="Не корректно введен E-mail" required />
+								<span class="help-block"></span>
+							</label>
+							<label class="form-group">
+								<span class="color_element">*</span> Ваше сообщение:
+								<textarea name="message" placeholder="Ваше сообщение" data-validation-required-message="Вы не ввели сообщение" required></textarea>
+								<span class="help-block"></span>
+							</label>
+							<button>Отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer + copyrignt -->
+
+	<footer class="main_footer bg_dark">
+		<div class="container">
+			<div class="col-md-12">
+				&copy; 2015-2020 ANDRII DIACHENKO
+				<div class="social_wrap">
+					<ul>
+						<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-vk"></i></a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-github"></i></a></li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+	</footer>
+	
+	<!-- Internal Cache -->
+
+	<div class="hidden"></div>
+
+	<!-- Scroll Top -->
+
+	<aside id="s_top">
+		<button class="top_button">
+			<i class="fa fa-chevron-up"></i>
+		</button>
+	</aside>	
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- JavaScript link -->
+
+	<script src="libs/jquery/jquery-2.1.3.min.js"></script>
+	<script src="libs/parallax/parallax.min.js"></script>
+	<script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script src="libs/mixitup/mixitup.min.js"></script>
+	<script src="libs/scroll2id/PageScroll2id.min.js"></script>
+	<script src="libs/waypoints/waypoints.min.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
+	<script src="libs/jqBootstrapValidation/jqBootstrapValidation.js"></script>
+	<script src="libs/myParallax/jquery.myParallax.js"></script>
+	<script src="js/common.js"></script>
+
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+
+</body>
+</html>

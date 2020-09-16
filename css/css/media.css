@@ -1,0 +1,121 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.personal_last_block {
+		margin-top: 35px;
+	}
+	.animation_directions_1, 
+	.animation_directions_2 {
+		text-align: center;	
+	}
+	.animation_directions_1, .animation_directions_2, div.item_directions {
+		display: none;
+	}
+	.textwidget  {
+		margin-top: 13px;
+	}
+	.view-fifth .mask {
+		display: none;
+	}
+	.view-fifth:hover img {
+		transform: translateX(0px); 
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.resume_container .left,
+	.section_content .resume_container h3,
+	.resume_container .resume_icon {
+		text-align: left;
+		margin-bottom: 10px; 
+	}
+	.top_button {
+		display: none;
+	}	
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.top_wrapper .top_text h1 {
+		font-size: 2em;
+		padding-right: 10px; 
+		padding-left: 10px;
+	}
+	.main_footer {
+		text-align: left;
+	}
+	.main_footer .social_wrap {
+		float: left;
+		margin-top: 20px;
+		width: 100%;
+	}
+	.main_footer .social_wrap ul {
+		padding-left: 0;
+	}
+	.view-fifth .mask {
+		display: inline-block;
+	}
+	.view-fifth:hover img {
+		transform: translateX(300px); 
+	}
+	.view h2 {
+		font-size: 13px;
+	}
+	.view p {
+		font-size: 11px;
+		padding: 18px 10px 10px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.portfolio_item h3 {
+		margin-top: -13px;
+	}
+	.view h2 {
+		font-size: 10px;
+	}
+	.view p {
+		font-size: 10px;
+		padding: 15px 10px 10px;
+	}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.textwidget {
+		margin-top: 13px;
+	}
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	.top_mnu ul {
+		margin-top: 260px;
+	}
+}
