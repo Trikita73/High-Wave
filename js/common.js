@@ -11,7 +11,7 @@ $(document).ready(function() {
 	$("#portfolio_grid").mixItUp();
 	$("#directions_grid").mixItUp();
 
-	//JQuery: ///+/// -->
+	//JQuery: Portfolio -->
 
 	$(".s_portfolio li").click(function() {
 		$(".s_portfolio li").removeClass("active");
@@ -77,7 +77,7 @@ $(document).ready(function() {
 		};			
 	});
 
-	//JQuery: This code is responsible for MagnificPopup at Portfolio and Directions -->
+	//JQuery: This code is responsible for MagnificPopup at Portfolio -->
 
 	$(".portfolio_item").each(function(i) {
 		$(this).find("a").attr("href", "#work_" + i);
