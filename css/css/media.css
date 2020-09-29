@@ -10,16 +10,6 @@
 	.personal_last_block {
 		margin-top: 35px;
 	}
-	.animation_directions_1, 
-	.animation_directions_2 {
-		text-align: center;	
-	}
-	.animation_directions_1, .animation_directions_2, div.item_directions {
-		display: none;
-	}
-	.textwidget  {
-		margin-top: 13px;
-	}
 	.view-fifth .mask {
 		display: none;
 	}
@@ -72,6 +62,12 @@
 		font-size: 11px;
 		padding: 18px 10px 10px;
 	}
+	.s_portfolio li {
+		margin-top: 20px;
+	}
+	.portfolio_item:hover .port_item_cont {
+		padding-top: 10%;
+	}
 }
 
 /* Custom, iPhone Retina */
@@ -85,6 +81,9 @@
 	.view p {
 		font-size: 10px;
 		padding: 15px 10px 10px;
+	}
+	.portfolio_item:hover .port_item_cont {
+		padding-top: 20%;
 	}
 }
 
@@ -108,9 +107,7 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-	.textwidget {
-		margin-top: 13px;
-	}
+
 }
 
  /* Large Devices, Wide Screens */

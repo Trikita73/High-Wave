@@ -83,14 +83,6 @@ $(document).ready(function() {
 		$(this).find("a").attr("href", "#work_" + i);
 		$(this).find(".podrt_descr").attr("id", "work_" + i);
 	});
-	$(".animation_directions_1").each(function(i) {
-		$(this).find("a").attr("href", "#work_" + i);
-		$(this).find(".podrt_direct").attr("id", "work_" + i);
-	});
-	$(".animation_directions_2").each(function(i) {
-		$(this).find("a").attr("href", "#work_" + i);
-		$(this).find(".podrt_direct").attr("id", "work_" + i);
-	});
 
 	//JQuery: ///+/// -->
 

@@ -508,8 +508,8 @@ svg {
 
 .bg_direction {
 	color: #fff; }
-.bg_direction .s_descr::after {
-	background-color: #fff; }	
+  .bg_direction .s_descr::after {
+  	background-color: #fff; }	
 
 .view {
 	float: left;
