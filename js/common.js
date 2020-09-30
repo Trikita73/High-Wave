@@ -84,11 +84,11 @@ $(document).ready(function() {
 		$(this).find(".podrt_descr").attr("id", "work_" + i);
 	});
 
-	//JQuery: ///+/// -->
+	//JQuery: BootstrapValidation -->
 
 	$("input, select, textarea").jqBootstrapValidation();
 
-	//JQuery: ///+/// -->
+	//JQuery: Scroll Menu -->
 
 	$(".top_mnu ul a").mPageScroll2id();
 
