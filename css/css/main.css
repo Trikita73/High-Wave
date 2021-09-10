@@ -250,6 +250,9 @@ svg {
       display: table-cell;
       text-align: center;
       vertical-align: middle; }
+      .top_wrapper .top_descr .top_centered p {
+        text-decoration: underline 2px;
+        font-size: 17px; }
   .top_wrapper .top_text {
     display: inline-block; }
     .top_wrapper .top_text p {
