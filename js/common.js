@@ -1,47 +1,39 @@
 $(document).ready(function() {
 
 	//JQuery: The script is responsible section portfolio myParallax -->
-
 	$('#portfolio').myParallax({
 		"speed" : "25"
 	});
 
 	//JQuery: This element is responsible for portfilio img -->
-
 	$("#portfolio_grid").mixItUp();
 	$("#directions_grid").mixItUp();
 
 	//JQuery: Portfolio -->
-
 	$(".s_portfolio li").click(function() {
 		$(".s_portfolio li").removeClass("active");
 		$(this).addClass("active");
 	});
 
 	//JQuery: Connection MagnificPopup -->
-
 	$(".popup").magnificPopup({type:"image"});
 	$(".popup_content").magnificPopup({type:"inline"});
 	$(".popup_direct").magnificPopup({type:"inline"});
 
 	//JQuery: This code animation in the section About -->
-
 	$(".animation_1").animated("flipInY", "flipOutDown");
 	$(".animation_2").animated("fadeInLeft", "fadeOutDown");
 	$(".animation_3").animated("fadeInRight", "fadeOutDown");
 
 	//JQuery: This code animation left and right section resume -->
-
 	$(".left .resume_item").animated("fadeInLeft", "fadeOutDown");
 	$(".right .resume_item").animated("fadeInRight", "fadeOutDown");
 
 	//JQuery: Title animation on the header -->
-
 	$(".top_text h1").animated("fadeInDown", "fadeOutUp");
 	$(".top_text p, .section_header").animated("fadeInUp", "fadeOutDown");
 
 	//JQuery: This code changes the height of the window (resize Height) -->
-
 	function heightDetect() {
 		$(".main_head").css("height", $(window).height());
 	};
@@ -51,20 +43,17 @@ $(document).ready(function() {
 	});
 
 	//JQuery: This is code has animation sandvich -->
-
 	$(".toggle_mnu").click(function() {
 		$(".sandwich").toggleClass("active");	
 	});
 
 	//JQuery: Highlighting the menu -->
-
 	$(".top_mnu ul a").click(function() {
 		$(".top_mnu").fadeOut(600);
 		$(".sandwich").toggleClass("active");
 	}).append("<span>");
 
 	//JQuery: This code responsible for opening menu and fade -->
-
 	$(".toggle_mnu").click(function() {
 		if ($(".top_mnu").is(":visible")) {
 			$("top_text").removeClass("h_opacify");
@@ -78,24 +67,37 @@ $(document).ready(function() {
 	});
 
 	//JQuery: This code is responsible for MagnificPopup at Portfolio -->
-
 	$(".portfolio_item").each(function(i) {
 		$(this).find("a").attr("href", "#work_" + i);
 		$(this).find(".podrt_descr").attr("id", "work_" + i);
 	});
 
 	//JQuery: BootstrapValidation -->
-
 	$("input, select, textarea").jqBootstrapValidation();
 
 	//JQuery: Scroll Menu -->
-
 	$(".top_mnu ul a").mPageScroll2id();
+
+	//JQuery: Make all divs the same Height --> 
+	function equalHeight() {
+		// search all bigger heights on elements in all columns
+		var tallestDiv = Math.max(
+			$('.resume_item').height()
+		);
+		// assign new height for div
+		$('.resume_item').height(tallestDiv);
+	}
+
+	// return function when page reload
+	equalHeight();
+		// return function when change size window
+		$(window).resize(function() {
+			equalHeight();
+		});
 
 });
 
 //JQuery: He is responsible for the slow scroll and loader -->
-
 $(window).load(function() {
 	$(".loader_inner").fadeOut();
 	$(".loader").delay(400).fadeOut("slow");
@@ -103,7 +105,6 @@ $(window).load(function() {
 });
 
 //JQuery: Scroll Top -->
-
 $('#s_top').hide();
 	$(function () {
 		$(window).scroll(function () {
@@ -120,3 +121,7 @@ $('#s_top').hide();
 			return false;
 		});
 	});
+
+
+
+
