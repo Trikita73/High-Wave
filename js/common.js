@@ -68,7 +68,7 @@ $(document).ready(function() {
 
 	//JQuery: This code is responsible for MagnificPopup at Portfolio -->
 	$(".portfolio_item").each(function(i) {
-		$(this).find("a").attr("href", "#work_" + i);
+		$(this).find("button").attr("href", "#work_" + i);
 		$(this).find(".podrt_descr").attr("id", "work_" + i);
 	});
 

@@ -27,7 +27,18 @@ body .main_footer,
   .bg_dark .s_descr::after {
     background-color: #fff; }
   .bg_dark a {
-    color: #fff; }
+    color: #FAFAFA;
+    transition: .5s ease; }
+
+.social_wrap li a {
+  transition: .5s ease; }
+  .social_wrap li a:hover {
+    color: #222; }
+
+.footer_social li a {
+  color: #FAFAFA; }
+  .footer_social li a:hover {
+    color: #2EA2CC; }
 
 svg path {
   fill: #222; }
@@ -81,9 +92,12 @@ section h3 {
   color: #fff;
   border-bottom: 1px solid #2EA2CC; }
 
-.portfolio_item .port_item_cont a {
-  border-color: #2EA2CC;
-  color: #2EA2CC; }
+.portfolio_item .port_item_cont .popup_content {
+  color: #2EA2CC;
+  border-radius: 3px;
+  background: none;
+  border: 1px solid #2EA2CC;
+  padding: 4px 5px; }
 
 .contacts_icon {
   color: #2EA2CC; }
