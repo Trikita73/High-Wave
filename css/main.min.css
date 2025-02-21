@@ -762,6 +762,18 @@ body {
     color:#333;
     transition:all .2s linear
     }
+
+    .view-fifth ul {
+    padding: 0;
+    margin: 0;   
+    }
+
+    .view-fifth ul li {
+    color: #222;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 2px;
+    }
     
     .view-fifth:hover .mask {
     transform:translateX(0px)

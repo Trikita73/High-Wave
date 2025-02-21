@@ -16,7 +16,7 @@ $(document).ready(function() {
 	});
 
 	//JQuery: Connection MagnificPopup -->
-	$(".popup").magnificPopup({type:"image"});
+	//$(".popup").magnificPopup({type:"image"});
 	$(".popup_content").magnificPopup({type:"inline"});
 	$(".popup_direct").magnificPopup({type:"inline"});
 
