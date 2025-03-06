@@ -113,8 +113,8 @@ body {
     }
     
     svg {
-    height:75px;
-    width:75px;
+    height:65px;
+    width:65px;
     z-index:100;
     position:relative
     }
@@ -722,7 +722,7 @@ body {
     font-size:14px;
     position:relative;
     color:#fff;
-    padding:35px 20px 20px;
+    padding:10px 10px 5px;
     text-align:center
     }
     
@@ -765,7 +765,8 @@ body {
 
     .view-fifth ul {
     padding: 0;
-    margin: 0;   
+    margin: 20px 0;   
+    font-size: 14px;
     }
 
     .view-fifth ul li {
