@@ -579,7 +579,8 @@ body {
     text-align:center;
     margin-top: 20px;
     transition: .9s ease;
-    border: 1px solid #2EA2CC
+    border: 1px solid #2EA2CC;
+    opacity: .75;
     }
 
     .modal-box-content a:hover {
