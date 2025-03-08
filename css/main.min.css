@@ -583,6 +583,10 @@ body {
     opacity: .75;
     }
 
+    .modal-box-content a:last-of-type {
+        margin-top: 5px;
+    }
+
     .modal-box-content a:hover {
         background-color: #2EA2CC;
         color: #fff;
