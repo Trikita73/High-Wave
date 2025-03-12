@@ -61,12 +61,16 @@
 	.view-fifth:hover img {
 		transform: translateX(300px); 
 	}
+
+	.view-fifth ul {
+		font-size: 11px;
+	}
 	.view h2 {
 		font-size: 13px;
 	}
 	.view p {
-		font-size: 11px;
-		padding: 18px 10px 10px;
+		font-size: 10px;
+		padding: 2px 0px 0px;
 	}
 	.s_portfolio li {
 		margin-top: 20px;
