@@ -557,11 +557,14 @@ body {
     text-transform:uppercase;
     font-weight:400;
     margin-top:20px;
-    padding-top:25px
+    padding-top:25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #d0d0d0;
     }
     
     .podrt_descr p {
-    margin-top:0
+    margin-top:0;
+    border-top: 1px solid #d0d0d0;
     }
     
     .podrt_descr img {
@@ -579,12 +582,12 @@ body {
     text-align:center;
     margin-top: 20px;
     transition: .9s ease;
-    border: 1px solid #2EA2CC;
     opacity: .75;
     }
 
     .modal-box-content a:last-of-type {
         margin-top: 5px;
+        margin-bottom: 20px;
     }
 
     .modal-box-content a:hover {
@@ -699,6 +702,7 @@ body {
     
     .view .mask,.view .content {
     height:300px;
+    width: 100%;
     position:absolute;
     overflow:hidden;
     top:0;

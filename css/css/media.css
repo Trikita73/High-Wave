@@ -64,9 +64,11 @@
 
 	.view-fifth ul {
 		font-size: 11px;
+		margin: 5px;
 	}
 	.view h2 {
-		font-size: 13px;
+		font-size: 12px;
+		margin: 5px 0 0;
 	}
 	.view p {
 		font-size: 10px;
@@ -86,11 +88,16 @@
 		margin-top: -13px;
 	}
 	.view h2 {
-		font-size: 10px;
+		font-size: 8px;
 	}
 	.view p {
-		font-size: 10px;
-		padding: 15px 10px 10px;
+		font-size: 8px;
+		padding: 0;
+		margin: 10px 5px;
+	}
+	.view-fifth ul {
+		font-size: 8px;
+		margin: 5px;
 	}
 	.portfolio_item:hover .port_item_cont {
 		padding-top: 20%;
