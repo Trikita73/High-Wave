@@ -598,6 +598,10 @@ body {
     .modal-box-content p {
     text-align:center
     }
+
+    .temp {
+        margin-bottom: 6px!important;
+    }
     
     .contact_box {
     margin-bottom:30px
@@ -616,6 +620,16 @@ body {
     
     .contact_box p {
     margin-top:5px
+    }
+
+    .contact_box a {
+        font-size: 16px;
+        transition: .2s ease;
+    }
+
+    .contact_box a:hover {
+    text-decoration: underline;
+    color: red;
     }
     
     .main_form button {
