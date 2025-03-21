@@ -2,7 +2,7 @@ body {
   color: #222; }
 
 a {
-  color: #2EA2CC; }
+  color: #4f88b4; }
 
 p,
 body .main_footer,
@@ -10,22 +10,22 @@ body .main_footer,
   color: #888; }
 
 .color_element {
-  color: #2EA2CC; }
+  color: #4f88b4; }
 
 .color_bg {
-  background-color: #2EA2CC; }
+  background-color: #4f88b4; }
 
 .color_border {
-  border-color: #2EA2CC; }
+  border-color: #4f88b4; }
 
 .bg_light {
   background-color: #FAFAFA; }
 
 .bg_dark {
   background-color: #222;
-  color: #fff; }
+  color: #FAFAFA; }
   .bg_dark .s_descr::after {
-    background-color: #fff; }
+    background-color: #FAFAFA; }
   .bg_dark a {
     color: #FAFAFA;
     transition: .5s ease; }
@@ -38,13 +38,13 @@ body .main_footer,
 .footer_social li a {
   color: #FAFAFA; }
   .footer_social li a:hover {
-    color: #2EA2CC; }
+    color: #4f88b4; }
 
 svg path {
   fill: #222; }
 
 .top_mnu a:hover {
-  color: #2EA2CC; }
+  color: #4f88b4; }
 
 .top_mnu a {
   letter-spacing: 4px; }
@@ -66,7 +66,7 @@ section h3 {
   color: #888; }
 
 .s_about p:nth-child(even) {
-  color: #2EA2CC; }
+  color: #4f88b4; }
 
 .resume_container h3 {
   color: #222;
@@ -79,7 +79,7 @@ section h3 {
   margin-right: 10px; }
 
 .resume_item .year {
-  background-color: #2EA2CC; }
+  background-color: #4f88b4; }
 
 .resume_item .resume_description {
   letter-spacing: 1px; }
@@ -89,32 +89,32 @@ section h3 {
   letter-spacing: 2px; }
 
 .s_portfolio li.active {
-  color: #fff;
-  border-bottom: 1px solid #2EA2CC; }
+  color: #FAFAFA;
+  border-bottom: 1px solid #4f88b4; }
 
 .portfolio_item .port_item_cont .popup_content {
-  color: #2EA2CC;
+  color: #4f88b4;
   border-radius: 3px;
   background: none;
-  border: 1px solid #2EA2CC;
+  border: 1px solid #4f88b4;
   padding: 4px 5px; }
 
 .contacts_icon {
-  color: #2EA2CC; }
+  color: #4f88b4; }
 
 .text-danger {
-  color: #2EA2CC; }
+  color: #4f88b4; }
 
 form input:focus,
 form textarea:focus {
-  border: 1px solid #2EA2CC; }
+  border: 1px solid #4f88b4; }
 
 form input,
 form textarea {
   letter-spacing: 2px; }
 
 form button {
-  background-color: #2EA2CC;
+  background-color: #4f88b4;
   letter-spacing: 2px; }
 
 form .form-group {
@@ -124,6 +124,6 @@ form .form-group {
     color: #FF6347; }
 
 .top_button {
-  color: #fff; }
+  color: #FAFAFA; }
   .top_button:hover {
-    color: #2EA2CC; }
+    color: #4f88b4; }

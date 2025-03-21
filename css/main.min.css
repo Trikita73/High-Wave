@@ -80,7 +80,7 @@ body {
     }
     
     .loader {
-    background:none repeat scroll 0 0 #fff;
+    background:none repeat scroll 0 0 #FAFAFA;
     bottom:0;
     height:100%;
     left:0;
@@ -96,7 +96,7 @@ body {
     background-size:cover;
     background-repeat:no-repeat;
     background-position:center center;
-    background-color:#fff;
+    background-color:#FAFAFA;
     height:85px;
     width:85px;
     margin-top:-50px;
@@ -122,7 +122,7 @@ body {
     .toggle_mnu {
     background-color:#222;
     border-radius:3px;
-    border:1px solid #fff;
+    border:1px solid #FAFAFA;
     width:48px;
     height:48px;
     float:right;
@@ -263,7 +263,7 @@ body {
     }
     
     .top_mnu ul a {
-    color:#fff;
+    color: #FAFAFA;
     display:block;
     text-transform:uppercase;
     font-size:14px;
@@ -309,7 +309,7 @@ body {
     
     .top_wrapper .top_descr .top_centered p {
     text-decoration:underline 2px;
-    font-size:17px
+    font-size:16.5px
     }
     
     .top_wrapper .top_text {
@@ -327,10 +327,10 @@ body {
     display:inline-block;
     padding:10px 35px;
     color:#FAFAFA;
-    border:8px solid #FAFAFA;
+    border:7px solid #FAFAFA;
     text-transform:uppercase;
     font-weight:700;
-    font-size:2.8em;
+    font-size:2.7em;
     background-color:rgba(0,0,0,0.4);
     margin-left:20px;
     margin-right:20px;
@@ -404,7 +404,7 @@ body {
     .social_wrap li a:hover {
     -webkit-transition:.25s;
     transition:.25s;
-    color: #2EA2CC
+    color: #688eac
     }
     
     .resume_container .left {
@@ -432,7 +432,7 @@ body {
     }
     
     .resume_container .year {
-    color:#fff;
+    color: #FAFAFA;
     font-weight:600;
     font-style:italic
     }
@@ -529,19 +529,19 @@ body {
     }
     
     .portfolio_item h3 {
-    color:#fff;
+    color: #FAFAFA;
     margin-bottom:0
     }
     
     .portfolio_item a {
     background-color:transparent;
-    border:#fff 1px solid;
+    border: #FAFAFA 1px solid;
     padding:2px 10px;
     display:inline-block
     }
     
     .podrt_descr {
-    background-color:#fff;
+    background-color: #FAFAFA;
     max-width:500px;
     margin:auto
     }
@@ -578,21 +578,21 @@ body {
     
     .modal-box-content a {
     display:block;
-    font-size:20px;
+    font-size: 18px;
     text-align:center;
-    margin-top: 20px;
+    margin-top: 10px;
     transition: .9s ease;
     opacity: .75;
     }
 
     .modal-box-content a:last-of-type {
         margin-top: 5px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .modal-box-content a:hover {
-        background-color: #2EA2CC;
-        color: #fff;
+        background-color: #688eac;
+        color: #FAFAFA;
     }
     
     .modal-box-content p {
@@ -634,7 +634,7 @@ body {
     
     .main_form button {
     border:none;
-    color:#fff;
+    color: #FAFAFA;
     line-height:40px;
     padding:0 25px;
     font-size:13px;
@@ -690,7 +690,7 @@ body {
     }
     
     .direction_item {
-    border:1px #fff solid
+    border:1px #FAFAFA solid
     }
     
     .bg_direction {
@@ -698,7 +698,7 @@ body {
     }
     
     .bg_direction .s_descr::after {
-    background-color:#fff
+    background-color:#FAFAFA
     }
     
     .view {
@@ -706,7 +706,7 @@ body {
     overflow:hidden;
     position:relative;
     text-align:center;
-    border:1px #fff solid;
+    border:1px #FAFAFA solid;
     cursor:default
     }
 
@@ -730,7 +730,7 @@ body {
     
     .view h2 {
     text-transform:uppercase;
-    color:#fff;
+    color: #FAFAFA;
     text-align:center;
     position:relative;
     font-size:17px;
@@ -744,7 +744,7 @@ body {
     font-style:italic;
     font-size:14px;
     position:relative;
-    color:#fff;
+    color: #FAFAFA;
     padding:10px 10px 5px;
     text-align:center
     }
@@ -754,7 +754,7 @@ body {
     text-decoration:none;
     padding:7px 14px;
     background:#000;
-    color:#fff;
+    color: #FAFAFA;
     text-transform:uppercase;
     box-shadow:0 0 1px #000
     }
