@@ -622,8 +622,16 @@ body {
     margin-top:5px
     }
 
+    .contact_box p:first-of-type {
+        margin-bottom: 0;
+    }
+
+    .contact_box p:last-of-type {
+        margin-top: 4px;
+    }
+
     .contact_box a {
-        font-size: 16px;
+        font-size: 17px;
         transition: .2s ease;
     }
 
