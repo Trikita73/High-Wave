@@ -465,6 +465,16 @@ body {
     .resume_item p {
     margin-top:10px
     }
+
+    .resume_item a {
+        text-decoration: underline;
+        font-weight: 700;
+        transition: .5s ease;
+    }
+
+    .resume_item a:hover {
+        color: red;
+    }
     
     .resume_item:last-child {
     margin-bottom:0
@@ -626,13 +636,13 @@ body {
         margin-bottom: 0;
     }
 
-    .contact_box p:last-of-type {
-        margin-top: 4px;
+    .last_contact {
+        margin-top: 1px;
     }
 
     .contact_box a {
         font-size: 17px;
-        transition: .2s ease;
+        transition: .5s ease;
     }
 
     .contact_box a:hover {
