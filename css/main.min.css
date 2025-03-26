@@ -80,7 +80,7 @@ body {
     }
     
     .loader {
-    background:none repeat scroll 0 0 #FAFAFA;
+    background:none repeat scroll 0 0 #fff;
     bottom:0;
     height:100%;
     left:0;
@@ -96,7 +96,7 @@ body {
     background-size:cover;
     background-repeat:no-repeat;
     background-position:center center;
-    background-color:#FAFAFA;
+    background-color:#fff;
     height:85px;
     width:85px;
     margin-top:-50px;
@@ -345,7 +345,7 @@ body {
     }
     
     .main_footer {
-    padding:50px 0;
+    padding:35px 0;
     font-size:13px;
     font-weight:300
     }
@@ -397,8 +397,8 @@ body {
     
     .social_wrap li {
     display:inline-block;
-    font-size:23px;
-    padding:0 3px
+    font-size:27px;
+    padding:0 4px
     }
     
     .social_wrap li a:hover {
@@ -629,11 +629,12 @@ body {
     }
     
     .contact_box p {
-    margin-top:5px
+    margin-top:5px;
+    margin-bottom: 0;
     }
 
     .contact_box p:first-of-type {
-        margin-bottom: 0;
+        margin-bottom: 5px;
     }
 
     .last_contact {
@@ -834,4 +835,10 @@ body {
     .copyright {
         display: contents;
         font-size: 14px;
+    }
+
+    .footer_copyright {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
     }

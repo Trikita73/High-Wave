@@ -80,6 +80,9 @@
 	.portfolio_item:hover .port_item_cont {
 		padding-top: 10%;
 	}
+	.footer_copyright {
+		display: block;
+	}
 }
 
 /* Custom, iPhone Retina */
