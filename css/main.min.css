@@ -473,7 +473,7 @@ body {
     }
 
     .resume_item a:hover {
-        color: red;
+        color: #e00404;
     }
     
     .resume_item:last-child {
