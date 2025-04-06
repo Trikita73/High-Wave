@@ -1,3 +1,13 @@
+html { /* Для плавной прокрутки всей страницы */
+    scroll-behavior: smooth;
+  }
+  
+  /* Или для определенного элемента с прокруткой */
+  .scrollable-container {
+    overflow-y: auto; /* Или scroll */
+    scroll-behavior: smooth;
+  }
+
 body {
     font-family:"ArianAMURegular",sans-serif;
     font-weight:400;
@@ -842,3 +852,5 @@ body {
         align-items: flex-end;
         justify-content: space-between;
     }
+
+    
