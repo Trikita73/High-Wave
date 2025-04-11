@@ -402,7 +402,8 @@ body {
     }
     
     .s_about .social_wrap {
-    margin-bottom:25px
+    margin-bottom:25px;
+    margin-top:25px
     }
     
     .social_wrap li {
