@@ -7,7 +7,6 @@ $(document).ready(function() {
 
 	//JQuery: This element is responsible for portfilio img -->
 	$("#portfolio_grid").mixItUp();
-	$("#directions_grid").mixItUp();
 
 	//JQuery: Portfolio -->
 	$(".s_portfolio li").click(function() {

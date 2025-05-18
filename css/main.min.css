@@ -854,21 +854,16 @@ body {
         justify-content: space-between;
     }
 
-    
-
-
-
-#portfolio_grid {
-  min-height: 300px;
-  display: flex;
-  flex-wrap: wrap;
+/* Fix for tool container */
+#directions_grid {
+ /* Отменяем стили MixItUp (если они применяются) */
+ display: block !important;
+ opacity: 1 !important;
+ transform: none !important;
+ /* Доп. стили, если необходимо */
+ position: relative; /* стили для позиционирования */
 }
 
-#portfolio .section_content::after {
-  content: "";
-  display: table;
-  clear: both;
+#directions_grid .mix {
+ display: block !important; /* элементы всегда видны */
 }
-
-
-
