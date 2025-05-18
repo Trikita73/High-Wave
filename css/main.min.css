@@ -858,9 +858,17 @@ body {
 
 
 
+#portfolio_grid {
+  min-height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
 
-
-
+#portfolio .section_content::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 
 
