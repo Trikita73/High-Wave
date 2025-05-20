@@ -77,6 +77,7 @@ $(document).ready(function() {
 	//JQuery: Scroll Menu -->
 	$(".top_mnu ul a").mPageScroll2id();
 
+	
 	//JQuery: Make all divs the same Height --> 
 	function equalHeight() {
 		// search all bigger heights on elements in all columns
@@ -93,6 +94,8 @@ $(document).ready(function() {
 		$(window).resize(function() {
 			equalHeight();
 		});
+	
+
 
 });
 
