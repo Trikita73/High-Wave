@@ -79,23 +79,30 @@ $(document).ready(function() {
 
 	
 	//JQuery: Make all divs the same Height --> 
-	function equalHeight() {
-		// search all bigger heights on elements in all columns
-		var tallestDiv = Math.max(
-			$('.resume_item').height()
-		);
-		// assign new height for div
-		$('.resume_item').height(tallestDiv);
+	function alignResumeItems() {
+		//dropp height for div
+		$('.left .resume_item, .right .resume_item').css('height', 'auto');
+
+		let leftItems = $('.left .resume_item');
+		let rightItems = $('.right .resume_item');
+		let count = Math.min(leftItems.length, rightItems.length); 
+
+		for (let i = 0; i < count; i++) {
+			let leftHeight = $(leftItems[i]).outerHeight();
+			let rightHeight = $(rightItems[i]).outerHeight();
+			let maxHeight = Math.max(leftHeight, rightHeight);
+
+			$(leftItems[i]).height(maxHeight);
+			$(rightItems[i]).height(maxHeight);
+		}
 	}
 
-	// return function when page reload
-	equalHeight();
-		// return function when change size window
-		$(window).resize(function() {
-			equalHeight();
-		});
-	
-
+	// launch after loading
+	$(window).on('load', alignResumeItems);
+	// and when window size is changing 
+	$(window).on('resize', function () {
+		setTimeout(alignResumeItems, 100); // wait when all div-blocks are counting 
+	});
 
 });
 
