@@ -115,20 +115,35 @@ $(window).load(function() {
 
 //JQuery: Scroll Top -->
 $('#s_top').hide();
-	$(function () {
-		$(window).scroll(function () {
-			if ($(this).scrollTop() > 100) {
-				$('#s_top').fadeIn();
-			} else {
-				$('#s_top').fadeOut();
-			}
-		});
-		$("#s_top").click(function () {
-			$("body, html").animate({
-				scrollTop: 0
-			}, 1700);
-			return false;
-		});
+
+$(function () {
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 100) {
+			$('#s_top').fadeIn();
+		} else {
+			$('#s_top').fadeOut();
+		}
 	});
 
+	$("#s_top").click(function () {
+		// turn off parallax if it active
+		if ($(window).width() > 992) {
+			try {
+				$("[data-parallax='scroll']").parallax("destroy");
+			} catch (e) { }
+		}
+
+		// scroll top
+		$("html, body").stop().animate({ scrollTop: 0 }, 400, function () {
+			// return parallax after scroll
+			if ($(window).width() > 922) {
+				$("[data-parallax='scroll']").parallax({
+					imageSrc: 'img/header/header.jpg',
+					zIndex: 1
+				}); 
+			}
+		});
+		return false;
+	});
+});
 
