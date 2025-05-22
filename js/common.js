@@ -75,9 +75,23 @@ $(document).ready(function() {
 	$("input, select, textarea").jqBootstrapValidation();
 
 	//JQuery: Scroll Menu -->
-	$(".top_mnu ul a").mPageScroll2id();
+	$(".top_mnu ul a").mPageScroll2id({
+		scrollSpeed: 350,
+		scrollEasing: 'linear',
+		offset: 0,
+		onStart: function () {
+			try {
+				$("[data-parallax='scroll']").parallax("destroy");
+			} catch (e) {}
+		},
+		onComplete: function () {
+			$("[data-parallax='scroll']").parallax({
+				imageSrc: 'img/header/header.jpg',
+				zIndex: 1
+			});
+		}
+	});
 
-	
 	//JQuery: Make all divs the same Height --> 
 	function alignResumeItems() {
 		//dropp height for div
