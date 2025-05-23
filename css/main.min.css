@@ -8,6 +8,10 @@ html { /* Для плавной прокрутки всей страницы */
     scroll-behavior: smooth;
   }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     font-family:"ArianAMURegular",sans-serif;
     font-weight:400;
@@ -868,4 +872,9 @@ body {
  display: block !important; /* элементы всегда видны */
 }
 
-
+/* Fix for Parallax */
+.image-parallax {
+    left: 0;
+    right: 0;
+    max-width: 100vw;
+}
