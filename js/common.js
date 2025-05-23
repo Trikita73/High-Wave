@@ -161,3 +161,31 @@ $(function () {
 	});
 });
 
+//JQuery: Height ul menu -->
+function centerTopMenu() {
+	const $menu = $(".top_mnu ul");
+
+	if ($menu.length) {
+		$menu.css("margin-top", 0); // dropp height
+
+		const windowHeight = $(window).height();
+		const menuHeight = $menu.outerHeight();
+		const offset = (windowHeight - menuHeight) / 2;
+
+		// If offset more > than 0 apply this condition
+		if (offset > 0) {
+			$menu.css("margin-top", offset + "px");
+		}
+	}
+}
+
+//  Call when open menu
+$(".toggle_mnu").on("click", function () {
+	setTimeout(centerTopMenu, 50); // Take some time for view menu
+});
+
+// Call when size window change
+$(window).on("resize", centerTopMenu);
+
+// Call when page is loading 
+$(window).on("load", centerTopMenu);

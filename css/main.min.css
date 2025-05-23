@@ -243,7 +243,7 @@ body {
     }
     
     .top_mnu ul {
-    margin-top:180px;
+    /*margin-top:180px;*/
     text-align:center
     }
     
@@ -867,3 +867,5 @@ body {
 #directions_grid .mix {
  display: block !important; /* элементы всегда видны */
 }
+
+
