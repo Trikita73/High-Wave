@@ -17,7 +17,7 @@
 				"overflow" : "hidden"
 			})
 			.wrapInner("<div class='parallax-content' style='position:relative;z-index:1'>")
-			.prepend("<div class='image-parallax' style='background-image:url(" + ths.data('parallax-image') + ");background-size:cover;background-position:top;position:absolute;top:0;width:100%'>");
+			.prepend("<div class='image-parallax' style='background-image:url(" + ths.data('parallax-image') + ");background-size:cover;background-position:top;position:absolute;top:0;width:100%;will-change: transform'>");
 
 			function parallaxInit() {
 

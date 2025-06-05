@@ -16,7 +16,12 @@ $(document).ready(function() {
 
 	//JQuery: Connection MagnificPopup -->
 	//$(".popup").magnificPopup({type:"image"});
-	$(".popup_content").magnificPopup({type:"inline"});
+	$(".popup_content").magnificPopup({
+		type:"inline",
+		midClick: true,
+		mainClass: 'mfp-fade', // add animation class
+		removalDelay: 300 // wait when animation finish after class close
+	});
 	$(".popup_direct").magnificPopup({type:"inline"});
 
 	//JQuery: This code animation in the section About -->
@@ -189,3 +194,5 @@ $(window).on("resize", centerTopMenu);
 
 // Call when page is loading 
 $(window).on("load", centerTopMenu);
+
+
