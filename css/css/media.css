@@ -17,10 +17,24 @@
 		margin-top: 35px;
 	}
 	.view-fifth .mask {
-		display: none;
+		display: block;
+		height: 100%;
+		transform: translateX(-380px);
+
 	}
 	.view-fifth:hover img {
 		transform: translateX(0px); 
+	}
+	.view-fifth ul {
+		font-size: 17px;
+		margin: 5px;
+	}
+	.view h2 {
+		font-size: 17px;
+	}
+	.view p {
+		font-size: 17px;
+		padding: 12px;
 	}
 }
 
@@ -61,7 +75,6 @@
 	.view-fifth:hover img {
 		transform: translateX(300px); 
 	}
-
 	.view-fifth ul {
 		font-size: 11px;
 		margin: 5px;
@@ -74,6 +87,7 @@
 		font-size: 10px;
 		padding: 2px 0px 0px;
 	}
+		*/
 	.s_portfolio li {
 		margin-top: 20px;
 	}
@@ -102,6 +116,7 @@
 		font-size: 8px;
 		margin: 5px;
 	}
+		
 	.portfolio_item:hover .port_item_cont {
 		padding-top: 20%;
 	}
