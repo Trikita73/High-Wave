@@ -23,8 +23,9 @@
 
 	}
 	.view-fifth:hover img {
-		transform: translateX(0px); 
-	}
+    transform:translateX(380px);
+    transition-delay:.1s
+    }
 	.view-fifth ul {
 		font-size: 17px;
 		margin: 5px;
